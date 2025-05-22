@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Family Tree - Nature Inspired</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                  url('gre.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #4b3b47;
+    }
+
+    nav {
+      background-color: rgba(255, 240, 245, 0.9);
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #6a4e4e;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .tree-container {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .tree {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+
+    .tree-level {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin: 40px 0;
+      position: relative;
+    }
+
+    .tree-member {
+           
+      text-align: center;
+   
+    }
+
+    .tree-member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    }
+
+    .tree-member h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+      color: #5a3e3e;
+    }
+
+    .tree-member p {
+      font-size: 0.9em;
+      color: #6b5050;
+    }
+
+  
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aa7e8c;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .tree-level {
+        flex-direction: column;
+        gap: 20px;
+      }
+      .tree-level::before {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="interest.html">Interest</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="goals.html">Goals</a></li>
+    </ul>
+  </nav>
+
+ <section class="tree-container">
+  <h2>My Family Tree 🌳</h2>
+  <div class="tree">
+  
+    <div class="tree-level">
+      <div class="tree-member">
+        <img src="grandfather.jpg" alt="Grandfather">
+        <h3>Dad</h3>
+        <p>The wise root of our family tree.</p>
+      </div>
+      <div class="tree-member">
+        <img src="grandmother.jpg" alt="Grandmother">
+        <h3>Mom</h3>
+        <p>Warm and nurturing, our guiding light.</p>
+      </div>
+    </div>
+
+    <div class="tree-level">
+      <div class="tree-member">
+        <img src="father.jpg" alt="Father">
+        <h3>Older Brother</h3>
+        <p>Supportive and strong, always leading by example.</p>
+      </div>
+      <div class="tree-member">
+        <img src="mother.jpg" alt="Mother">
+        <h3>Older Sister</h3>
+        <p>Kind-hearted and always there when needed.</p>
+      </div>
+      <div class="tree-member">
+        <img src="uncle.jpg" alt="Uncle">
+        <h3>Uncle</h3>
+        <p>Adventurous and fun-loving.</p>
+      </div>
+    </div>
+
+    <!-- Siblings -->
+    <div class="tree-level">
+      <div class="tree-member">
+        <img src="me.jpg" alt="Me">
+        <h3>Me</h3>
+        <p>Always growing and learning 🌿</p>
+      </div>
+      <div class="tree-member">
+        <img src="sibling.jpg" alt="Sibling">
+        <h3>My Sibling</h3>
+        <p>Energetic and full of creativity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    © 2025 [Your Name] • Bloom with grace 🌸
+  </footer>
+
+</body>
+</html>
+

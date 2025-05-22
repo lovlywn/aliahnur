@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Nature Inspired</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+                  url('gre.png') no-repeat center center fixed;
+
+      background-size: cover;
+      color: #4b3b47;
+    }
+
+    nav {
+      background-color: rgba(255, 240, 245, 0.9);
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #6a4e4e;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .home-header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
+    .home-header h1 {
+      font-size: 3em;
+      color: #6a4e4e;
+      margin-bottom: 0.3em;
+    }
+
+    .home-header p {
+      font-size: 1.2em;
+      color: #856d6d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aa7e8c;
+      font-size: 0.9em;
+    }
+.time-animated {
+  animation: colorChange 1s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #F299A7; /* First tone */
+  }
+  100% {
+    color: #99E47B; /* Second tone */
+  }
+}
+.small-time {
+  font-size: 16px;
+}
+.media-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.poster {
+  width: auto;
+  max-width: 230px;
+  height: auto;
+  border-radius: 4px;
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="interest.html">Interest</a></li>
+      <li class="dropdown">
+        <a href="#">Collection</a>
+        <ul class="dropdown-content">
+          <li><a href="collection.html">My Collection</a></li>
+          </ul>
+      </li>
+      <li><a href="goals.html">Goals</a></li>
+    </ul>
+  </nav>
+
+  <header class="home-header">
+    <h1>Hello, I'm Aliah!🍓</h1>
+    <p>Good day, Starshine. The Earth says hello!</p>
+<p>
+     <p>
+   
+     <time id="currentTime" class="small-time time-animated"></time>
+    </p>
+
+  </header>
+  <footer>
+      © 2025 aly • Bloom with grace 🌸
+  </footer>
+<script>
+  const timeEl = document.getElementById('currentTime');
+  const now = new Date();
+  const isoString = now.toISOString();
+
+  const displayString = now.toLocaleString('en-US', {
+    weekday: 'long', year: 'numeric', month: 'long',
+    day: 'numeric', hour: '2-digit', minute: '2-digit'
+  });
+  timeEl.setAttribute('datetime', isoString);
+  timeEl.textContent = displayString;
+</script>
+
+
+</body>
+</html>
